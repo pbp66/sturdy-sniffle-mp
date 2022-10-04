@@ -42,5 +42,14 @@ clickMeBtn.on('click', searchFunction)
 //   renderData()
 
 
+
 // 'https://www.loc.gov/' + format + '/?fo=json'
 //   Format List : maps/audio/photos/manuscripts/newspapers/film-and-videos/notated-music/websites
+
+  'https://www.loc.gov/' + format + '/?fo=json'
+//   Format List : maps/audio/photos/manuscripts/newspapers/film-and-videos/notated-music/websites
+
+'&q=' + query;
+
+// "https://www.loc.gov/" + FORMAT + "/?q=" + QUERY INPUT "&fo=json"
+
