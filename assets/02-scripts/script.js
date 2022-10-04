@@ -11,6 +11,13 @@ function searchFunction(event) {
     event.preventDefault()
 
     // API call
+    var queryURL = 'https://www.loc.gov/' + format + '/?fo=json'
+
+    fetch(queryURL)
+        .then(response => response.json())
+        .then(data => {
+            console.log(data)
+        }
 
     // current elements get changed to be on the left side, new elements appear on the right side
 
@@ -20,4 +27,20 @@ function searchFunction(event) {
 // add event listener to the button
 clickMeBtn.on('click', searchFunction)
 
+////////////
+// function renderData() {
+//     console.log('hello from renderData', )
+//     fetch('https://www.loc.gov/search/?fo=json')
+//       .then(function (response) {
+//         return response.json()
+//       })
+//       .then(function (json) {
+//         console.log(json)
+//       })
+//   }
+  
+//   renderData()
 
+
+// 'https://www.loc.gov/' + format + '/?fo=json'
+//   Format List : maps/audio/photos/manuscripts/newspapers/film-and-videos/notated-music/websites
