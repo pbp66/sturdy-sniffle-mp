@@ -39,3 +39,5 @@ clickMeBtn.on('click', searchFunction)
 //   Format List : maps/audio/photos/manuscripts/newspapers/film-and-videos/notated-music/websites
 
 '&q=' + query;
+
+// "https://www.loc.gov/" + FORMAT + "/?q=" + QUERY INPUT "&fo=json"
