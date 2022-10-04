@@ -21,18 +21,19 @@ function searchFunction(event) {
 clickMeBtn.on('click', searchFunction)
 
 ////////////
-
-
-
-function renderData() {
-    console.log('hello from renderData', )
-    fetch('https://www.loc.gov/search/?fo=json')
-      .then(function (response) {
-        return response.json()
-      })
-      .then(function (json) {
-        console.log(json)
-      })
-  }
+// function renderData() {
+//     console.log('hello from renderData', )
+//     fetch('https://www.loc.gov/search/?fo=json')
+//       .then(function (response) {
+//         return response.json()
+//       })
+//       .then(function (json) {
+//         console.log(json)
+//       })
+//   }
   
-  renderData()
+//   renderData()
+
+
+  'https://www.loc.gov/' + format + '/?fo=json'
+//   Format List : maps/audio/photos/manuscripts/newspapers/film-and-videos/notated-music/websites
